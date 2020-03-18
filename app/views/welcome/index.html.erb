@@ -1,23 +1,21 @@
 
-<nav role="navigation">
-  <div class="inner">
-    <a href="#nav" class="nav-collapse" id="nav-collapse">Menu</a>
-    <ul class="nav" id="nav">
-      <li><%= link_to "Home", root_path %></li>
-      <%= render 'devise/menu/registration_items' %>
-      <%= render 'devise/menu/login_items' %>
+<%#= render 'welcome/header' %>
+
+<!--<li><%#= link_to "Home", root_path %></li>-->
+<%#= render 'devise/menu/registration_items' %>
+<%#= render 'devise/menu/login_items' %>
 <!--      <li><%#= link_to "About", about_path %></li>-->
 <!--      <li><%#= link_to "Contact", contact_path %></li>-->
-    </ul>
-  </div>
-</nav>
 
+
+
+<div class="container">
 <h2>Hello World</h2>
 <p>
   The time is now: <%= Time.now %>
 </p>
 
-
+</div>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>

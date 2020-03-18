@@ -15,5 +15,29 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="Rails Garage: test" uuid="b4603b87-3d1a-46c3-9f7e-0fc45afb18ca">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\jakem\RubymineProjects\Garage\db\test.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Garage: development" uuid="4fdf705b-ea69-4b59-986b-db3a9619ea6e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\jakem\RubymineProjects\Garage\db\development.sqlite3</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails Garage: production" uuid="28898ddd-445b-44ce-ae97-0e3ffd503d78">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\jakem\RubymineProjects\Garage\db\production.sqlite3</jdbc-url>
+    </data-source>
   </component>
 </project>
