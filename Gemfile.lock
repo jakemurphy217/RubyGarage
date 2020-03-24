@@ -51,6 +51,8 @@ GEM
       execjs
     bcrypt (3.1.13)
     bindex (0.8.1)
+    bootscaf (0.1.26)
+      thor
     bootsnap (1.4.6)
       msgpack (~> 1.0)
     bootstrap (4.4.1)
@@ -86,6 +88,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
+    devise-i18n (1.9.0)
+      devise (>= 4.7.1)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.12.2-x64-mingw32)
@@ -231,6 +236,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bootscaf
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.4.1)
   byebug
@@ -238,6 +244,8 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  devise-bootstrap-views (~> 1.0)
+  devise-i18n
   httparty
   jbuilder (~> 2.5)
   jquery-rails

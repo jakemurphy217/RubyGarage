@@ -9,7 +9,7 @@
     <ul class=" nav navbar-nav ml-auto" id="navbarLinks">
       <li class="nav-item" > <%= link_to'Home', root_path %></li>
       <li class="nav-item" ><%= link_to'Favourite',welcome_favourites_path %></li>
-      <li class="nav-item" ><%= link_to'About', welcome_about_path %></li>
+      <li class="nav-item" ><%= link_to'Cars For Sale', carsforsales_path %></li>
 
       <% if user_signed_in? %>
         <li class="nav-item"><%= link_to('My Account', edit_user_registration_path) %></li>

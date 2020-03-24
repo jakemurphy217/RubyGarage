@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :carsforsales
+  resources :tests
   devise_for :users
   #get 'welcome/index'
 

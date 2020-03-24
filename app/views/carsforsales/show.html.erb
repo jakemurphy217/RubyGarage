@@ -1,0 +1,51 @@
+<%= render 'welcome/header' %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @carsforsale.title %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @carsforsale.brand %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @carsforsale.year %>
+</p>
+
+<p>
+  <strong>Engine:</strong>
+  <%= @carsforsale.engine %>
+</p>
+
+<p>
+  <strong>Transmission:</strong>
+  <%= @carsforsale.transmission %>
+</p>
+
+<p>
+  <strong>Mileage:</strong>
+  <%= @carsforsale.mileage %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @carsforsale.color %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @carsforsale.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @carsforsale.price %>
+</p>
+
+<%= link_to 'Edit', edit_carsforsale_path(@carsforsale) %> |
+<%= link_to 'Back', carsforsales_path %>

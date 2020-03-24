@@ -49,6 +49,12 @@ gem 'httparty'
 #simple from for adding cars
 gem 'simple_form'
 
+#adding bootstrap to stock rails scaffold
+gem 'bootscaf', group: :development
+#bootstrap for devise
+gem 'devise-bootstrap-views', '~> 1.0'
+gem 'devise-i18n'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
