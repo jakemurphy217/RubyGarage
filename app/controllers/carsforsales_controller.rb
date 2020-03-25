@@ -4,7 +4,7 @@ class CarsforsalesController < ApplicationController
   # GET /carsforsales
   # GET /carsforsales.json
   def index
-    @carsforsales = Carsforsale.all
+    @carsforsales = Carsforsale.where(["title LIKE ?","%#{params[:search]}%"])
   end
 
   # GET /carsforsales/1

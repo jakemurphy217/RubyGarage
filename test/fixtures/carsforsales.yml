@@ -4,7 +4,7 @@ one:
   title: MyString
   brand: MyString
   year: 1
-  engine: 1
+  engine: 9.99
   transmission: MyString
   mileage: 1
   color: MyString
@@ -15,7 +15,7 @@ two:
   title: MyString
   brand: MyString
   year: 1
-  engine: 1
+  engine: 9.99
   transmission: MyString
   mileage: 1
   color: MyString

@@ -4,7 +4,7 @@ class CreateCarsforsales < ActiveRecord::Migration[5.2]
       t.string :title
       t.string :brand
       t.integer :year
-      t.integer :engine
+      t.decimal :engine
       t.string :transmission
       t.integer :mileage
       t.string :color
