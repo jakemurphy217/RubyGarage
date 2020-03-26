@@ -31,6 +31,11 @@
   <div class="row">
     <div class="col-md-4">
 
+      <h1>Enter a number to check if it is Prime</h1>
+      <%= form_tag "/validate" do %>
+        <%= text_field_tag :search_string %>
+        <%= submit_tag "Search" %>
+      <% end %>
 <!--       start of the card -->-->
 <!--      <div class="card mb-4 shadow-sm">-->
 

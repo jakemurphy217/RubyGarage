@@ -35,26 +35,29 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-#login Gem
+# login Gem
 gem 'devise'
 
-#bootstrap library
+# bootstrap library
 gem 'bootstrap', '~> 4.4.1'
 
 gem 'jquery-rails'
 
-#api calls
+# api calls
 gem 'httparty'
 
-#simple from for adding cars
+# simple from for adding cars
 gem 'simple_form'
 
-#adding bootstrap to stock rails scaffold
+# adding bootstrap to stock rails scaffold
 gem 'bootscaf', group: :development
-#bootstrap for devise
+
+# bootstrap for devise
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'devise-i18n'
 
+# my gem for adding a fee for car finance
+gem 'carcalculator'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
