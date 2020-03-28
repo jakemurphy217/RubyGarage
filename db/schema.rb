@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_24_221936) do
+ActiveRecord::Schema.define(version: 2020_03_28_134558) do
 
   create_table "carsforsales", force: :cascade do |t|
     t.string "title"
@@ -26,11 +26,29 @@ ActiveRecord::Schema.define(version: 2020_03_24_221936) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "favourites", force: :cascade do |t|
+    t.integer "carsforsale_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["carsforsale_id"], name: "index_favourites_on_carsforsale_id"
+    t.index ["user_id"], name: "index_favourites_on_user_id"
+  end
+
   create_table "tests", force: :cascade do |t|
     t.string "name"
     t.decimal "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "userfavourites", force: :cascade do |t|
+    t.integer "carsforsales_id"
+    t.integer "users_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["carsforsales_id"], name: "index_userfavourites_on_carsforsales_id"
+    t.index ["users_id"], name: "index_userfavourites_on_users_id"
   end
 
   create_table "users", force: :cascade do |t|

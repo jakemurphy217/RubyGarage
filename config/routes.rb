@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'favourites/update'
   resources :carsforsales
   resources :tests
   devise_for :users

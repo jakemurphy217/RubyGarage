@@ -1,5 +1,6 @@
 class CarsforsalesController < ApplicationController
   before_action :set_carsforsale, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:index]
 
   # GET /carsforsales
   # GET /carsforsales.json
@@ -10,6 +11,7 @@ class CarsforsalesController < ApplicationController
   # GET /carsforsales/1
   # GET /carsforsales/1.json
   def show
+    @favourite_exists = Favourite.where(carsforsale: @carsforsale, user: current_user ) == [] ? false :true
   end
 
   # GET /carsforsales/new
