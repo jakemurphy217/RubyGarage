@@ -46,6 +46,7 @@
   <%= @carsforsale.price %>
 </p>
 
+
 <%= link_to favourite_text, favourites_update_path(carsforsale: @carsforsale), id:'favourite_link', remote: true %>
 <%= link_to 'Edit', edit_carsforsale_path(@carsforsale) %> |
 <%= link_to 'Back', carsforsales_path %>

@@ -1,6 +1,6 @@
 class CarsforsalesController < ApplicationController
   before_action :set_carsforsale, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:index]
+  before_action :authenticate_user!, except: [:show,:index]
 
   # GET /carsforsales
   # GET /carsforsales.json
@@ -25,9 +25,11 @@ class CarsforsalesController < ApplicationController
 
   # POST /carsforsales
   # POST /carsforsales.json
+
+
   def create
     @carsforsale = Carsforsale.new(carsforsale_params)
-
+    @carsforsale.id = current_user
     respond_to do |format|
       if @carsforsale.save
         format.html { redirect_to @carsforsale, notice: 'Carsforsale was successfully created.' }

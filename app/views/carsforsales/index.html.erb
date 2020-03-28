@@ -39,8 +39,10 @@
       <td><%= carsforsale.description %></td>
       <td><%= carsforsale.price %></td>
       <td><%= link_to 'Show', carsforsale %></td>
+      <% if current_user && current_user.admin %>
       <td><%= link_to 'Edit', edit_carsforsale_path(carsforsale) %></td>
       <td><%= link_to 'Destroy', carsforsale, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
     </tr>
   <% end %>
   </tbody>

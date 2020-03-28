@@ -58,6 +58,10 @@ gem 'devise-i18n'
 
 # my gem for adding a fee for car finance
 gem 'carcalculator'
+
+# for the decorator test
+gem 'rest-client'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
