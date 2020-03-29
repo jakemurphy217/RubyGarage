@@ -2,6 +2,7 @@ class CarsforsalesController < ApplicationController
   before_action :set_carsforsale, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:show,:index]
 
+
   # GET /carsforsales
   # GET /carsforsales.json
   def index
@@ -60,9 +61,15 @@ class CarsforsalesController < ApplicationController
   def destroy
     @carsforsale.destroy
     respond_to do |format|
-      format.html { redirect_to carsforsales_url, notice: 'Carsforsale was successfully destroyed.' }
+      format.html { redirect_to carsforsales_url, notice: 'Carsforsale was successfully destroyed.'}
       format.json { head :no_content }
     end
+  end
+
+  private
+
+  def authenticate_user!
+    # code here
   end
 
   private

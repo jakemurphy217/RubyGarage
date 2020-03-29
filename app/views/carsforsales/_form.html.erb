@@ -1,10 +1,9 @@
-<%= render 'welcome/header' %>
 
 <%= simple_form_for(@carsforsale) do |f| %>
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
+  <div class="form-inputs justify-content-cente">
     <div class="col-4"> <%= f.input :title %> </div>
     <div class="col-4"> <%= f.input :brand %> </div>
     <div class="col-4"> <%= f.input :year %></div>
@@ -21,4 +20,3 @@
   </div>
 <% end %>
 
-<%= render 'welcome/footer' %>

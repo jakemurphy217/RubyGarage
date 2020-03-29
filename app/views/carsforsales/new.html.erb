@@ -1,5 +1,10 @@
 
-
+<%= render 'welcome/header' %>
+<h1> Put your car up for sale!!</h1>
+<div class="newsaleUI">
 <%= render 'form', carsforsale: @carsforsale %>
-
+</div>
 <%= link_to 'Back', carsforsales_path %>
+
+
+<%= render 'welcome/footer' %>

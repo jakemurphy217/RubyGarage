@@ -24,7 +24,7 @@ footer {
   position: fixed;
   bottom: 15px;
   width: 100%;
-  height: 40px;
+  //height: 40px;
   background-color: grey;
   color: #F7F7F7;
 }
@@ -57,5 +57,15 @@ footer {
 }
 
 #bodylayout{
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+  min-height: 400px;
+  clear: both;
+}
+
+.showcarDesgin{
+  //text-align: center;
+  padding-bottom: 60px;
+}
+.newsaleUI{
+  //text-align: center;
 }

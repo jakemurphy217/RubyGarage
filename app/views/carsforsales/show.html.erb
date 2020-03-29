@@ -2,61 +2,49 @@
 
 <p id="notice"><%= notice %></p>
 <div class="showcarDesgin">
-  <div>
-    <h2>Title:</h2>
-    <%= @carsforsale.title %>
-  </div>
 
-  <div>
-    <h2>Brand:</h2>
-    <%= @carsforsale.brand %>
-  </div>
-
-  <div>
-    <h2>Year:</h2>
-    <%= @carsforsale.year %>
-  </div>
-
-  <div>
-    <h2>Engine:</h2>
-    <%= @carsforsale.engine %>
-  </div>
-
-  <div>
-    <h2>Transmission:</h2>
-    <%= @carsforsale.transmission %>
-  </div>
-
-  <div>
-    <h2>Mileage:</h2>
-    <%= @carsforsale.mileage %>
-  </div>
-
-  <div>
-    <h2>Color:</h2>
-    <%= @carsforsale.color %>
-  </div>
-
-  <div>
-    <h2>Description:</h2>
-    <%= @carsforsale.description %>
-  </div>
-
-  <div>
-    <h2>Price:</h2>
-    <%= @carsforsale.price %>
-  </div>
+  <h3><u>Title:</u></h3>
+  <p><%= @carsforsale.title %></p>
 
 
-
-<%= link_to favourite_text, favourites_update_path(carsforsale: @carsforsale), id: 'favourite_link', remote: true %> |
-<% if current_user && current_user.admin %>
-  <%= link_to 'Edit', edit_carsforsale_path(@carsforsale) %>
-<% end %>|
-<%= link_to 'Back', carsforsales_path %>
+  <h3><u>Brand:</u></h3>
+  <p><%= @carsforsale.brand %> </p>
 
 
+  <h3><u>Year:</u></h3>
+  <p><%= @carsforsale.year %> </p>
 
+
+  <h3><u>Engine:</u></h3>
+  <p><%= @carsforsale.engine %> </p>
+
+
+  <h3><u>Transmission:</u></h3>
+  <p><%= @carsforsale.transmission %> </p>
+
+
+  <h3><u>Mileage:</u></h3>
+  <p><%= @carsforsale.mileage %> </p>
+
+
+  <h3><u>Color:</u></h3>
+  <p><%= @carsforsale.color %> </p>
+
+
+  <h3><u>Description:</u></h3>
+  <p> <%= @carsforsale.description %> </p>
+
+
+  <h3><u>Price:</u></h3>
+  <p><%= @carsforsale.price %></p>
+
+  <%= link_to favourite_text, favourites_update_path(carsforsale: @carsforsale), id: 'favourite_link', remote: true %> |
+  <% if current_user && current_user.admin %>
+    <%= link_to 'Edit', edit_carsforsale_path(@carsforsale) %>
+  <% end %>|
+  <%= link_to 'Back', carsforsales_path %>
+
+
+</div>
 
 <%= render 'welcome/footer' %>
-</div>
