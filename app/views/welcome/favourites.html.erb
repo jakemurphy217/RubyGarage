@@ -1,12 +1,10 @@
 
 <%= render 'welcome/header' %>
 
-<h1>favourites page</h1>
-
-<h1>Your favourites</h1>
+<h1><u>Your favourites</u></h1>
 
 <% current_user.favourites.each do |favourite| %>
-  [<%= favourite.created_at.strftime('%H:%M%p') %>]You favourited this post: <%= link_to favourite.carsforsale.title, favourite.carsforsale %>
+  <h2> [<%= favourite.created_at.strftime('%D %R%P') %>]You favourited this post: <%= link_to favourite.carsforsale.title, favourite.carsforsale %></h2>
 <% end %>
 
 

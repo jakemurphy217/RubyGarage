@@ -42,7 +42,7 @@
         <td><%= carsforsale.mileage %></td>
         <td><%= carsforsale.color %></td>
         <td><%= carsforsale.description %></td>
-        <td><%= carsforsale.price %></td>
+        <td>€<%= carsforsale.price %></td>
         <td><%= link_to 'Show', carsforsale %></td>
         <% if current_user && current_user.admin %>
           <td><%= link_to 'Edit', edit_carsforsale_path(carsforsale) %></td>
