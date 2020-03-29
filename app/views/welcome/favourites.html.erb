@@ -8,3 +8,6 @@
 <% current_user.favourites.each do |favourite| %>
   [<%= favourite.created_at.strftime('%H:%M%p') %>]You favourited this post: <%= link_to favourite.carsforsale.title, favourite.carsforsale %>
 <% end %>
+
+
+<%= render 'welcome/footer' %>

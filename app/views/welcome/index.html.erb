@@ -1,11 +1,14 @@
 <%= render 'welcome/header' %>
 
-<div class="jumbotron">
+<div class="jumbotron jumbo-index">
   <div class="container">
 
-    <h2>Hello World</h2>
-    <p>
-      The time is now: <%= Time.now %>
+    <h2>Welcome</h2>
+    <p> This is the TheGarage, where you can put up cars up for sale </p>
+    <p> also will be providing finance options in the near future!! </p>
+
+      <!--      The time is now: <%#= Time.now %>-->
+
     </p>
     <!-- button to relocate to the github repo   -->
     <button type="button" class="btn btn-info" value="Input Button" onclick="relocateToGit()">GitHub</button>
@@ -20,18 +23,25 @@
 <div class="container">
 
   <div class="row">
-    <div class="col-md-4">
+    <div class=" geminput-section col-md-12">
 
-      <h1>Enter a number to check if it is Prime</h1>
+      <h1><u>Want to finance a car with us?</u></h1>
+      <h2>We can lend you the cash to buy your dream car!
+        and can be paid back in 12 monthly installments </h2>
+  <div class="form form-group">
       <%= form_tag "/validate" do %>
         <%= text_field_tag :search_string %>
         <%= submit_tag "Search" %>
       <% end %>
 
+  </div>
+
+
     </div>
 
   </div>
 </div>
+<%= render 'welcome/footer' %>
 
 
 

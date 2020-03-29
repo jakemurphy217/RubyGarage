@@ -8,5 +8,7 @@ class ApplicationController < ActionController::Base
     return @favourite_exists ? "Unfavourite" : "Favourite"
   end
 
+
+
   helper_method :favourite_text
 end

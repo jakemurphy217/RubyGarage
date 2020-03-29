@@ -3,4 +3,59 @@
 
 #navbarLinks > li.nav-item {
   padding: 5px;
+
+}
+
+.jumbotron {
+  background-image: url("garagebk.png");
+  background-size: cover ;
+  color:black;
+}
+
+.indexForm{
+  text-align: center;
+}
+
+.geminput-section{
+  background-color: #f1f2f2;
+}
+
+footer {
+  position: fixed;
+  bottom: 15px;
+  width: 100%;
+  height: 40px;
+  background-color: grey;
+  color: #F7F7F7;
+}
+
+.navbar-custom {
+  background-color: #ff0000;
+}
+
+#navbarLinks > li > a{
+  color: #F7F7F7;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+//table background
+.table > tbody > tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+
+.carsforsaleUI{
+  text-align: center;
+
+}
+
+.carsforsaleSearch{
+  padding: 20px;
+}
+
+#bodylayout{
+  margin-bottom: 40px;
 }
